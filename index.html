@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html data-theme="retro" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="lg:px-12 drop-shadow-2xl">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Homepage</a></li>
+                            <li><a>Let's Shop</a></li>
+                            <li><a>About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <a class="btn btn-ghost normal-case text-xl text-pink-700">Conceptual Shopping Cart</a>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <button class="btn btn-ghost btn-circle">
+                        <div class="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                            <span class="badge badge-xs badge-primary indicator-item"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="grid md:grid-cols-1 lg:grid-cols-2 lg:p-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./img/coffee.jpg" alt="coffee" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 id="first-card-title" class="card-title">Coffee!!!</h2>
+                        <p>Let's start the day with refreshment.</p>
+                        <p>$<span id="first-card-prize">260</span></p>
+                        <p>Quantiy: <span id="first-product-qty">1</span></p>
+                        <div class="card-actions">
+                            <button id="first-card-btn" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./img/heart_js.jpg" alt="heart" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title" id="second-card-title">Heart!!!</h2>
+                        <p>Smile is the cure.</p>
+                        <p>$<span id="second-card-prize">200</span></p>
+                        <p>Quantiy: <span id="second-card-qty">4</span></p>
+                        <div class="card-actions">
+                            <button id="second-card-btn" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./img/panda.png" alt="panda" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title" id="third-card-title">Panda!!!</h2>
+                        <p>Don't worry!!! We have hulk.</p>
+                        <p>$<span id="third-card-prize">300</span></p>
+                        <p>Quantity: <span id="third-card-qty">2</span></p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary" id="third-card-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./img/umbrella.png" alt="umbrella" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 id="card-4-title" class="card-title">Umbrella!!!</h2>
+                        <p>You might get a cold if you haven't any...</p>
+                        <p>$<span id="card-4-price">100</span></p>
+                        <p>Quantity: <span id="card-4-qty">3</span></p>
+                        <div class="card-actions">
+                            <button id="card-4-btn" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./img/vue-js.jpg" alt="vue" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 id="card-5-title" class="card-title">Vue!!!</h2>
+                        <p>I have no idea about this.</p>
+                        Price: <input type="text" name="" id="card-5-price" placeholder="Enter Price">
+                        Quantity: <input type="text" name="" id="card-5-qty" placeholder="Enter Quantity">
+                        <div class="card-actions">
+                            <button id="card-5-btn" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="lg:mt-2 lg:p-3">
+                <h1 class="text-5xl text-center font-semibold text-gray-900 sm:mt-3 sm:mb-2">Total Items: <span
+                        id="total-items">0</span></h1>
+                <div class="overflow-x-auto">
+                    <table class="table table-zebra w-full">
+                        <!-- head -->
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Name</th>
+                                <th>Quantiy</th>
+                                <th>Prize</th>
+                                <th>Sub Total</th>
+                                <th>Grand Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-container">
+                            <!-- <tr></tr> -->
+                        </tbody>
+                        <tfoot>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="text-2xl">Total = $ <span id="total-sum" class="text-pink-600">00</span></td>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- js  -->
+    <script src="./js/utility.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>
