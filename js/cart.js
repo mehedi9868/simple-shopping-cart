@@ -8,7 +8,7 @@ document.getElementById("first-card-btn").addEventListener("click", function () 
 
     const productName = document.getElementById("first-card-title").innerText;
     const productPrize = document.getElementById("first-card-prize").innerText;
-    const productQuantity = document.getElementById("first-product-qty").value;
+    const productQuantity = document.getElementById("first-product-qty").innerText;
     // math operation
     const firstProduct = parseInt(productPrize) * parseInt(productQuantity);
     if (grandTotal + firstProduct > budgetAmount) {
@@ -38,7 +38,7 @@ document.getElementById("second-card-btn").addEventListener("click", function ()
         // call display function
         serial++;
         dataSubTotal(productName, productPrize, productQuantity, secondProduct);
-        // btn disabled 
+        // btn disabled
         document.getElementById('second-card-btn').setAttribute('disabled', true)
 
     }
@@ -59,7 +59,7 @@ document.getElementById("third-card-btn").addEventListener("click", function () 
         // call display function
         serial++;
         dataSubTotal(productName, productPrize, productQuantity, thirdProduct);
-        // btn disabled 
+        // btn disabled
         document.getElementById('third-card-btn').setAttribute('disabled', true)
 
     }
@@ -81,7 +81,7 @@ document.getElementById("card-4-btn").addEventListener("click", function () {
         // call display function
         serial++;
         dataSubTotal(productName, productPrize, productQuantity, fourthProduct);
-        // btn disabled 
+        // btn disabled
         document.getElementById('card-4-btn').setAttribute('disabled', true)
     }
 })
