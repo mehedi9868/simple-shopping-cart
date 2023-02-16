@@ -8,7 +8,7 @@ document.getElementById("first-card-btn").addEventListener("click", function () 
 
     const productName = document.getElementById("first-card-title").innerText;
     const productPrize = document.getElementById("first-card-prize").innerText;
-    const productQuantity = document.getElementById("first-product-qty").innerText;
+    const productQuantity = document.getElementById("first-product-qty").value;
     // math operation
     const firstProduct = parseInt(productPrize) * parseInt(productQuantity);
     if (grandTotal + firstProduct > budgetAmount) {
@@ -28,7 +28,7 @@ document.getElementById("second-card-btn").addEventListener("click", function ()
 
     const productName = document.getElementById("second-card-title").innerText;
     const productPrize = document.getElementById("second-card-prize").innerText;
-    const productQuantity = document.getElementById("second-card-qty").innerText;
+    const productQuantity = document.getElementById("second-card-qty").value;
     // math operation
     const secondProduct = parseInt(productPrize) * parseInt(productQuantity);
     if (grandTotal + secondProduct > budgetAmount) {
@@ -49,7 +49,7 @@ document.getElementById("second-card-btn").addEventListener("click", function ()
 document.getElementById("third-card-btn").addEventListener("click", function () {
     const productName = document.getElementById("third-card-title").innerText;
     const productPrize = document.getElementById("third-card-prize").innerText;
-    const productQuantity = document.getElementById("third-card-qty").innerText;
+    const productQuantity = document.getElementById("third-card-qty").value;
     // math operation
     const thirdProduct = parseInt(productPrize) * parseInt(productQuantity);
     if (grandTotal + thirdProduct > budgetAmount) {
@@ -71,7 +71,7 @@ document.getElementById("card-4-btn").addEventListener("click", function () {
 
     const productName = document.getElementById("card-4-title").innerText;
     const productPrize = document.getElementById("card-4-price").innerText;
-    const productQuantity = document.getElementById("card-4-qty").innerText;
+    const productQuantity = document.getElementById("card-4-qty").value;
     // math operation
     const fourthProduct = parseInt(productPrize) * parseInt(productQuantity);
     if (grandTotal + fourthProduct > budgetAmount) {
