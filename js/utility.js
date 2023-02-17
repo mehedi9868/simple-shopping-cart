@@ -20,3 +20,16 @@ function dataSubTotal(productName, productPrize, productQty, productTotal) {
     }
 
 }
+
+document.getElementById('new-budget-amount').addEventListener('keyup', function () {
+    budgetChecker();
+})
+
+function budgetChecker() {
+    const newBudget = document.getElementById('new-budget-amount').value;
+    const oldBudget = document.getElementById('budget-amount');
+    oldBudget.innerText = newBudget;
+    const budgetAmount = document.getElementById('budget-amount').innerText;
+    return parseFloat(budgetAmount);
+
+}

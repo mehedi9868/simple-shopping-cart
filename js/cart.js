@@ -1,11 +1,9 @@
 let serial = 0;
 let grandTotal = 0;
-const budgetAmount = document.getElementById('budget-amount').innerText;
+
 // 1st card
 document.getElementById("first-card-btn").addEventListener("click", function () {
-    // grand total validation:
-
-
+    const budgetAmount = budgetChecker();
     const productName = document.getElementById("first-card-title").innerText;
     const productPrize = document.getElementById("first-card-prize").innerText;
     const productQuantity = document.getElementById("first-product-qty").value;
@@ -25,7 +23,7 @@ document.getElementById("first-card-btn").addEventListener("click", function () 
 
 // 2nd card
 document.getElementById("second-card-btn").addEventListener("click", function () {
-
+    const budgetAmount = budgetChecker();
     const productName = document.getElementById("second-card-title").innerText;
     const productPrize = document.getElementById("second-card-prize").innerText;
     const productQuantity = document.getElementById("second-card-qty").value;
@@ -47,6 +45,7 @@ document.getElementById("second-card-btn").addEventListener("click", function ()
 
 // 3rd card
 document.getElementById("third-card-btn").addEventListener("click", function () {
+    const budgetAmount = budgetChecker();
     const productName = document.getElementById("third-card-title").innerText;
     const productPrize = document.getElementById("third-card-prize").innerText;
     const productQuantity = document.getElementById("third-card-qty").value;
@@ -67,8 +66,7 @@ document.getElementById("third-card-btn").addEventListener("click", function () 
 
 // 4th card
 document.getElementById("card-4-btn").addEventListener("click", function () {
-
-
+    const budgetAmount = budgetChecker();
     const productName = document.getElementById("card-4-title").innerText;
     const productPrize = document.getElementById("card-4-price").innerText;
     const productQuantity = document.getElementById("card-4-qty").value;
@@ -88,8 +86,7 @@ document.getElementById("card-4-btn").addEventListener("click", function () {
 
 // 5th card
 document.getElementById("card-5-btn").addEventListener("click", function () {
-
-
+    const budgetAmount = budgetChecker();
     const productName = document.getElementById("card-5-title").innerText;
     const productPrize = document.getElementById("card-5-price").value;
     const productQuantity = document.getElementById("card-5-qty").value;
@@ -112,4 +109,3 @@ document.getElementById("card-5-btn").addEventListener("click", function () {
         }
     }
 })
-
