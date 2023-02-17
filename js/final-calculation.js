@@ -11,8 +11,9 @@ document.getElementById('discount-btn').addEventListener('click', function () {
         // discount calc 
         const finalDiscount = parseInt(grandTotal) * .20;
         discountDisplay.innerText = parseFloat(finalDiscount.toFixed(2));
-        // final total calc
+        // final total calc and display
         finalAmmount.innerText = parseInt(grandTotal) - parseFloat(finalDiscount);
+        finalAmmount.parentNode.classList.remove('hidden');
         // remaining balance
         remainingBalance.innerText = parseFloat(parseInt(budgetAmount) - parseFloat(finalAmmount.innerText)).toFixed(2);
     } else {

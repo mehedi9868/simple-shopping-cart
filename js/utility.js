@@ -21,9 +21,6 @@ function dataSubTotal(productName, productPrize, productQty, productTotal) {
 
 }
 
-document.getElementById('new-budget-amount').addEventListener('keyup', function () {
-    budgetChecker();
-})
 
 function budgetChecker() {
     const newBudget = document.getElementById('new-budget-amount').value;

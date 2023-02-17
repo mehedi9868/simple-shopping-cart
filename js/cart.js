@@ -109,3 +109,8 @@ document.getElementById("card-5-btn").addEventListener("click", function () {
         }
     }
 })
+
+// update your balance
+document.getElementById('new-budget-amount').addEventListener('keyup', function () {
+    budgetChecker();
+})
